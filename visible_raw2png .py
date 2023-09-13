@@ -2,8 +2,6 @@ import cv2 as cv
 import numpy as np
 import os
 
-test    
-
 def visibleBGR_to_img( img ):
     """Applies color channel conversions"""
     if len(img.shape) == 2: #visible ise siyah beyaz olmaz
@@ -11,7 +9,7 @@ def visibleBGR_to_img( img ):
     img = cv.cvtColor(img, cv.COLOR_BGR2RGB)     
     return img
 
-folder_path = "/home/ali/Desktop/Zilok_Panorama/camera12"
+folder_path = "/home/local/Desktop/k_Pnrm/1"
 rows, cols = (4860, 6464)
 for path in os.listdir(folder_path):    
     save_path = folder_path + "/" + path + ".png"
